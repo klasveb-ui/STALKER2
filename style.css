@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101510;
+    color: #e0e8d8;
+    line-height: 1.6;
+}
+
+header {
+    background: #080d08;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid #83a63b;
+}
+
+header h1 {
+    color: #a4c957;
+    font-size: 36px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #aab59c;
+    margin: 10px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #c5d99a;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a4ff36;
+}
+
+.hero {
+    min-height: 400px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.65),
+        rgba(10, 20, 10, 0.85)
+    ), url("https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200") center/cover;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero h2 {
+    color: #b5e65a;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #789d32;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #a3d447;
+    color: #101510;
+}
+
+section {
+    padding: 55px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #a5ce53;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+section img {
+    width: 80%;
+    max-width: 650px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #718c3e;
+}
+
+section p {
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #202a1d;
+    border: 1px solid #77953c;
+    border-radius: 10px;
+    padding: 25px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #303e25;
+}
+
+.card h3 {
+    color: #b5e65a;
+    margin-bottom: 15px;
+}
+
+.quote {
+    background: #1c2719;
+    border-top: 2px solid #789d32;
+    border-bottom: 2px solid #789d32;
+}
+
+.quote h2 {
+    font-size: 35px;
+}
+
+footer {
+    background: #080d08;
+    padding: 35px;
+    text-align: center;
+    color: #a5b58c;
+}
+
+footer h2 {
+    color: #a5ce53;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    section img {
+        width: 100%;
+    }
+}
